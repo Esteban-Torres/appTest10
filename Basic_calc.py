@@ -6,7 +6,7 @@ import os
 
 a=10
 b=5
-add=a+b
+add=a*b
 
 os.system("cls")
 print(":::BASIC CALC:::")
