@@ -1,19 +1,26 @@
 '''Duvan Latorre - Esteban Torres'''
 from random import randint, uniform, random
+
 def ra():
     a = randint(1,6)
     return a
 
 players = []
+points = []
 
 def basico():
-    i = 0
-    while (i <= jg):
-        players.append()
-        i = i + 1
+    i = 1
+    while (i <= jg):        
         print("Jugador ", i, ": Presione una tecla para jugar")
         key = input()
-        p1 = 
+        d1 = ra()
+        d2 = ra()
+        print("Dado 1: " , d1 , " Dado 2: " , d2)
+        r = d1 + d2
+        print("Avanza: ", r , " Espacios")
+        points.append(r)        
+        i = i + 1
+        
 
 def tablero():
     print(":::::Menú:::::")
@@ -24,7 +31,7 @@ def tablero():
     nvl = int(input())
     if (nvl == 1):
         print("Nivel Basico")
-
+        basico()
     elif(nvl == 2):
         print("Nivel Intermedio")
     elif(nvl == 3):
